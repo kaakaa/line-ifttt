@@ -1,8 +1,8 @@
 {
-  "name": "LINE echo",
-  "description": "Echo server for LINE BOT API",
-  "repository": "https://github.com/yuya-takeyama/line-echo",
-  "keywords": ["line", "bot"],
+  "name": "LINE ifttt",
+  "description": "ifttt request server for LINE BOT API",
+  "repository": "https://github.com/kaakaa/line-ifttt",
+  "keywords": ["line", "bot", "ifttt", "maker"],
   "env": {
     "LINE_CHANNEL_ID": {
       "description": "Channel ID",
@@ -15,6 +15,14 @@
     "LINE_CHANNEL_MID": {
       "description": "Channel MID",
       "required": true
+    },
+    "MAKER_SECRET_KEY": {
+      "description": "Secret Key of Maker channel",
+      "required": true
+    },
+    "MAKER_EVENT_NAME_DEFAULT": {
+      "description": "Default event name of Maker channel",
+      "required": false
     }
   },
   "addons": [
